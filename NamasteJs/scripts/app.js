@@ -6,39 +6,40 @@ const users = [
   { id: 5, name: "Eva", age: 35, isActive: true, marks: 76 },
 ];
 
-// COMBINED (map + filter + reduce)
+// // COMBINED (map + filter + reduce)
 
-// Get the names of users who passed (marks >= 50).
-const nameOfUsersScoring50OrMore = users
-  .filter((user) => user.marks >= 50)
-  .map((user) => user.name);
-console.log(nameOfUsersScoring50OrMore);
+// // Get the names of users who passed (marks >= 50).
+// const nameOfUsersScoring50OrMore = users
+//   .filter((user) => user.marks >= 50)
+//   .map((user) => user.name);
+// console.log(nameOfUsersScoring50OrMore);
 
-// Find the average marks of only active users.
-const averageMarksOfActiveUsers = users
-  .filter((user) => user.isActive === true)
-  .reduce((acc, user) => acc + user.marks, 0);
-console.log(averageMarksOfActiveUsers);
+// // Find the average marks of only active users.
+// const averageMarksOfActiveUsers = users
+//   .filter((user) => user.isActive === true)
+//   .reduce((acc, user) => acc + user.marks, 0);
+// console.log(averageMarksOfActiveUsers);
 
-// Get a comma-separated string of all users older than 25.
-const userData = users
-  .filter((user) => user.age > 25)
-  .map((user) => user.name)
-  .join(", ");
-console.log(userData);
+// // Get a comma-separated string of all users older than 25.
+// const userData = users
+//   .filter((user) => user.age > 25)
+//   .map((user) => user.name)
+//   .join(", ");
+// console.log(userData);
 
-// Find the total marks of users whose names are longer than 3 letters.
-const totalMarksOfUserWhoseNameIsLongerThan3Letter = users
-  .filter((user) => user.name.length > 3)
-  .map((user) => user.marks);
-console.log(totalMarksOfUserWhoseNameIsLongerThan3Letter);
+// // Find the total marks of users whose names are longer than 3 letters.
+// const totalMarksOfUserWhoseNameIsLongerThan3Letter = users
+//   .filter((user) => user.name.length > 3)
+//   .map((user) => user.marks);
+// console.log(totalMarksOfUserWhoseNameIsLongerThan3Letter);
 
-// Return an array of names of top 2 scoring users.
-const top2Scorer = users
-  .sort((a, b) => b.marks - a.marks)
-  .slice(0, 2)
-  .map((user) => user.name);
-console.log(top2Scorer);
+// // Return an array of names of top 2 scoring users.
+// const top2Scorer = users
+//   .sort((a, b) => b.marks - a.marks)
+//   .slice(0, 2)
+//   .map((user) => user.name);
+// console.log(top2Scorer);
+
 //MAP
 // //Get an array of all user names
 // const userNames = users.map((user) => user.name);
