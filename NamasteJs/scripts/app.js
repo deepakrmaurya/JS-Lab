@@ -1,10 +1,39 @@
-const users = [
-  { id: 1, name: "Alice", age: 25, isActive: true, marks: 82 },
-  { id: 2, name: "Bob", age: 30, isActive: false, marks: 55 },
-  { id: 3, name: "Charlie", age: 22, isActive: true, marks: 91 },
-  { id: 4, name: "David", age: 28, isActive: false, marks: 47 },
-  { id: 5, name: "Eva", age: 35, isActive: true, marks: 76 },
-];
+// Variables and Data Type-
+let favFruit = "Mango";
+let age = 20;
+let doYouLikeIceCream = true;
+
+console.log(`${favFruit} - ${age} - ${doYouLikeIceCream}`);
+
+favFruit = "Bananananana";
+
+console.log(`${favFruit} - ${age} - ${doYouLikeIceCream}`);
+
+let toyList = ["Teddy Bear", "Plane", "Car"];
+console.log(toyList);
+
+let toy = { name: "Car", color: "Black", type: "F1" };
+console.log(toy);
+
+// What is null, undefined and not defined
+// null
+let emptyBox = null;
+console.log(emptyBox);
+
+//undefined
+let myBox;
+console.log(myBox);
+
+//not defined
+console.log(otherBox);
+
+// const users = [
+//   { id: 1, name: "Alice", age: 25, isActive: true, marks: 82 },
+//   { id: 2, name: "Bob", age: 30, isActive: false, marks: 55 },
+//   { id: 3, name: "Charlie", age: 22, isActive: true, marks: 91 },
+//   { id: 4, name: "David", age: 28, isActive: false, marks: 47 },
+//   { id: 5, name: "Eva", age: 35, isActive: true, marks: 76 },
+// ];
 
 // // COMBINED (map + filter + reduce)
 
