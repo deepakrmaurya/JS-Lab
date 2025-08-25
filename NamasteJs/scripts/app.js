@@ -1,3 +1,19 @@
+//Promises
+const myPromise = new Promise((resolve, reject) => {
+  const foodReady = true;
+
+  if (foodReady) {
+    resolve("Your pizza is ready 🍕");
+  } else {
+    reject("Sorry, no ingredients ❌");
+  }
+});
+
+myPromise
+  .then((result) => console.log(result)) // if resolved
+  .catch((error) => console.error(error)) // if rejected
+  .finally(() => console.log("Order process finished ✅"));
+
 // Variables and Data Type-
 let favFruit = "Mango";
 let age = 20;
